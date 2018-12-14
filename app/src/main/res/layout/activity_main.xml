@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:ads="http://schemas.android.com/apk/res-auto"
+android:id="@+id/container"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity"
+tools:ignore="MergeRootFrame">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="166dp"
+        android:gravity="center_horizontal"
+        android:text="This is Admob Ads For Banner"
+        android:textSize="50dp" />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Next to Activity 2"
+    android:onClick="Main2Activity"
+    android:id="@+id/Main2Activity"/>
+
+<com.google.android.gms.ads.AdView
+    android:id="@+id/ad_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    ads:adSize="BANNER"
+    ads:adUnitId="@string/banner_ad_unit_id" />
+
+</RelativeLayout>
